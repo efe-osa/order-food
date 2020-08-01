@@ -111,7 +111,9 @@ outline: none;
     background-color: white;
     width:100%;
     position: absolute;
-    height: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    /* transform: scale(0) translateY(0); */
 }
 
 
@@ -243,8 +245,8 @@ padding:30px;
     transform : translateY(-100px);
     transition: all .3s ease-in ;
 }
-#menu-card.open-modal .menu{
-    transform: translateY();
+#menu-card.open-modal .menu {
+animation: pullUp .2s ease-in ;
 }
  #menu-card.open-modal .c-view-menu {
     transform: scale(0);
@@ -326,11 +328,14 @@ padding:30px;
 }
 @keyframes pullUp {
   0% {
-      height: 20%;
-      opacity: .7;
+     transform: translateY(10px);
     }
-    100% {
-        height:100%;
-    opacity: 1;
+    80% {
+        transform: translateY(75);
+        opacity: 0.9;
+    }
+    100%{
+        /* transform: scale(0); */
+      visibility: visible;
   }
 }
