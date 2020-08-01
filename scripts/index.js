@@ -7,7 +7,7 @@ function toggleFoodMenu() {
     const isOpen = menu.classList.contains('open-modal')
     menu.classList.toggle('open-modal', !isOpen)
 
-    document.querySelector('body').classList.toggle('darken-bg ', !isOpen)
+    document.querySelector('body > div:first-child').classList.toggle('darken-bg', !isOpen)
     
     const viewMealImgButton = document.querySelector('.view-meal-img__btn')
     viewMealImgButton.addEventListener('click', function (event) {
@@ -16,21 +16,17 @@ function toggleFoodMenu() {
 }
 
 function toggleMealImg() {
-    const image =  document.querySelector('.menu-item__img-box img')
     const imageBox =  document.querySelector('.menu-item__img-box')
+    const menu = document.querySelector('.menu')
     
-    const isImgOpen = image.classList.contains('expand')
-    const isImgBoxOpen = imageBox.classList.contains('expand')
-    imageBox.classList.toggle('collapse',isImgBoxOpen)
-    imageBox.classList.toggle('expand',!isImgBoxOpen)
-    image.classList.toggle('collapse',isImgBoxOpen)
-    image.classList.toggle('expand', !isImgBoxOpen)
+    const isImgBoxOpen = imageBox.classList.contains('open-image')
     
+    menu.classList.toggle('open-image', !isImgBoxOpen)
+    menu.classList.toggle('close-image', isImgBoxOpen)
+
     imageBox.addEventListener('click', (e) => {
-        imageBox.classList.add('collapse')
-        imageBox.classList.add('collapse')
-        imageBox.remove('expand')
-        image.remove('expand')
+        menu.classList.remove('open-image')
+        menu.classList.add('close-image')
     })
 
 }
