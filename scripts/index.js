@@ -6,6 +6,7 @@ function toggleFoodMenu() {
     const menu= document.querySelector('#menu-card')
     const isOpen = menu.classList.contains('open-modal')
     menu.classList.toggle('open-modal', !isOpen)
+    menu.classList.toggle('close-modal', isOpen)
 
     document.querySelector('body > div:first-child').classList.toggle('darken-bg', !isOpen)
     
