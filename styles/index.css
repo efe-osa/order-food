@@ -320,7 +320,7 @@ padding:30px;
 #menu-card.close-modal .c-view-menu {
     transform: scaleY(1);
     opacity: 1;
-    animation: fadeIn .7s ease-in-out .2s both;
+    transition: all .7s ease-in-out .2s ;
 }
 #menu-card.close-modal button.view-menu__btn {
     border-bottom-right-radius: 6px;
