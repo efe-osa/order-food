@@ -1,0 +1,15 @@
+{
+  "name": "y",
+  "version": "y",
+  "description": "an app to view available foods",
+  "main": "scripts/index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": "https://github.com/jessye95/order-food",
+  "author": "Efe Osawaru-Oyelade",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

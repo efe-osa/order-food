@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js"></script>
+    <title>Order Food</title>
+</head>
+<body class="container">
+
+    <div >
+        <header class="header">
+            <figure>
+                <img src="./images/user.png" alt="user-image" class="header__img">
+            </figure>
+            <figcaption class="header__msg">
+                Good Morning Slim!
+            </figcaption>
+    
+        </header>
+        <nav class="nav">
+            <ul>
+                <li class="nav-item">
+                    <img src="./images/calendar.png" alt="schedule" class="active">
+                    <p>Schedule</p>
+                </li>
+                <li class="nav-item">
+                    <img src="./images/history.png" alt="history" class="active">
+                    <p>History</p>
+                </li>
+                <li class="nav-item">
+                    <img src="./images/notification.png" alt="notifications" class="active">
+                    <p>Notifications</p>
+                </li>
+                <li class="nav-item">
+                    <img src="./images/chat.png" alt="chat" class="active">
+                    <p>Chat</p>
+                </li>
+            </ul>
+        </nav>
+        <main class="schedule">
+            <section class="schedule__header">
+                <h1>Schedule</h1>
+                <button>Reconfigure Service</button>
+            </section>
+            <aside class="alert grid">
+                <p class="alert__text">Your account is inactive.<br /><span>15% off</span> offer until June 23.</p>
+                <p class="alert__price">
+                    <span>N75,000</span>
+                   
+                        Pay N62,800
+                  
+                </p>
+            </aside>
+            <div id="menu-card">
+                <section class="view-menu grid">
+                    <p class="view-menu__text">
+                        <span class="c-view-menu">
+    
+                            View your meals for the week
+                        </span>
+                        <span class="close-menu">Today's Meals</span>
+                    </p>
+                    <button class="view-menu__btn" type="button">
+                        <span class="c-view-menu">
+                            Check 'em
+                        </span>
+                      
+                        <span class="close-menu">
+                            &times;
+                        </span>
+                    </button>
+                </section>
+                <section class="menu">
+                    <ul>
+                        <li class="menu-item">
+                            <figure>
+                                <img src="./images/meal-1.png" alt="meal-1">
+                            </figure>
+                            <figcaption>
+                                <p>Akara & Pap</p>
+                                <small>Carbohydrate</small>
+                            </figcaption>
+                        </li>
+                        <li class="menu-item">
+                            <figure>
+                                <img src="./images/meal-2.png" alt="meal-2">
+                            </figure>
+                            <figcaption>
+                                <p>Jollof Rice</p>
+                                <small>Protein</small>
+                            </figcaption>
+                        </li>
+                        <li class="menu-item">
+                            <figure class=" view-meal-img view-meal-img__btn" tabindex="1" role="button">
+                                <img src="./images/meal-3.png" alt="meal-3">
+        
+                            </figure>
+                            <figcaption>
+                                <p>Gastonton</p>
+                                <small>Carbohydrate</small>
+                            </figcaption>
+                        </li>
+                        <li class="menu-item">
+                            <figure>
+                                <img src="./images/meal-4.png" alt="meal-4">
+                            </figure>
+                            <figcaption>
+                                <p>Port Domenic</p>
+                                <small>Carbohydrate</small>
+                            </figcaption>
+                        </li>
+                        <li class="menu-item">
+                            <figure>
+                                <img src="./images/meal-5.png" alt="meal-5">
+                            </figure>
+                            <figcaption>
+                                <p> Carleeville</p>
+                                <small>Fat & Oils</small>
+                            </figcaption>
+                        </li>
+                        <li class="menu-item">
+                            <figure>
+                                <img src="./images/meal-6.png" alt="meal-6">
+                            </figure>
+                            <figcaption>
+                                <p>South Chesleyton</p>
+                                <small>Vegetable</small>
+                            </figcaption>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <section class="menu-item__img-box">
+                <figure>
+                    <img src="./images/meal-expand.png" alt="expanded image">
+                </figure>
+            </section>
+            <section class="getting-started">
+                <h2>Getting Started</h2>
+                <small>Let's answer any questions you have left</small>
+                <div class="grid grid-col-2 grid-gap">
+                    <div class="getting-started__service">
+                        <figure class="service-1">
+                            <img src="./images/phone.png" alt="call us">
+                        </figure>
+                        <figcaption>Set up a call with your gardener</figcaption>
+                        <p class="lilac">
+                            <a href="#">Do it</a> 
+                            &rarr;
+                        </p>
+                    </div>
+                    <div class="getting-started__service">
+                        <figure class="service-2">
+                            <img src="./images/video.png" alt="video-chat us">
+                        </figure>
+                        <figcaption>Lose yourself to this video</figcaption>
+                        <p class="peach">
+                            <a href="#">Play</a> 
+                            &rarr;
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="schedule__item">
+                <h3 class="schedule__day green">Tommorow</h3>
+                <div class="schedule__day-content">
+                    <small>9-10am</small>
+                    <p>
+                        Your cleaner is coming in to give your apartment the looks.
+                    </p>
+                </div>
+                </p>
+            </section>
+            <section class="schedule__day">
+                <h3 class="schedule__day green">Friday, July 27</h3>
+                <div class="schedule__day-content">
+                    <small>9-10am</small>
+                    <p>
+                        Your cleaner is coming in to give your apartment the looks.
+                    </p>
+                </div>
+                </p>
+            </section>
+    
+        </main>
+    
+    </div>
+</body>
+
+</html>
