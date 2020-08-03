@@ -1,3 +1,5 @@
+
+        
 /**
  * 
  * @param {*} e MouseEvent
@@ -25,7 +27,7 @@ function toggleMealImg() {
     menu.classList.toggle('open-image', !isImgBoxOpen)
     menu.classList.toggle('close-image', isImgBoxOpen)
 
-    imageBox.addEventListener('click', (e) => {
+    imageBox.addEventListener('click', () => {
         menu.classList.remove('open-image')
         menu.classList.add('close-image')
     })
@@ -43,7 +45,8 @@ window.onload = () => {
 
 window.onunload = () => {
     const viewMenuButton = document.querySelector('.view-menu__btn')
-    const viewMealImgButton = document.querySelector('.view-meal-img__btn')
-    viewMealMenuButton.removeEventListener('click')
-    viewMealImgButton.removeEventListener('click')
+    const imageBox =  document.querySelector('.menu-item__img-box')
+
+    viewMenuButton.removeEventListener('click', toggleFoodMenu, false);
+    imageBox.removeEventListener('click', () => { }, false);
 }
