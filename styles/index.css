@@ -305,7 +305,8 @@ height: 100%;
 }
 #menu-card.open-modal .menu-item {
     transform: scaleY(1);
-    animation: expand 1s ease-in ;
+    animation: expand 1.2s ease-in ;
+    -webkit-animation: expand 1.2s ease-in ;
 }
 
 /* open modal header */
@@ -354,8 +355,8 @@ height: 100%;
 
 #menu-card.close-modal .menu-item 
 {
-     animation: collapse 1s ease-in ;
-     -webkit-animation: collapse 1s ease-in ;
+     animation: collapse 1.2s ease-in .1s ;
+     -webkit-animation: collapse 1.2s ease-in .1s ;
 } 
 
 /* close modal header */
@@ -653,7 +654,7 @@ display: flex;
     height: auto;
     opacity: 0.5;
     }
-    50%,70% {
+    50%,90% {
     opacity: 0.75;
     }
 }
@@ -670,7 +671,7 @@ display: flex;
     height: auto;
     opacity: 0.5;
     }
-    50%,70% {
+    50%,90% {
     opacity: 0.75;
     }
 }
@@ -687,7 +688,7 @@ display: flex;
     height: auto;
     opacity: 0.5;
     }
-    50%,70% {
+    50%,90% {
     opacity: 0.75;
     }
 }
@@ -704,7 +705,7 @@ display: flex;
     height: auto;
     opacity: 0.5;
     }
-    50%,70% {
+    50%,90% {
     opacity: 0.75;
     }
 }
@@ -742,8 +743,8 @@ display: flex;
         height: 15px;
     }
     50%{
-        height: 0;
         opacity: 0.1;
+        height: 0;
     }
     80%,100%{        
         transform: scaleY(0);  
@@ -761,8 +762,8 @@ display: flex;
         height: 15px;
     }
     50%{
-        height: 0;
         opacity: 0.1;
+        height: 0;
     }
     80%,100%{        
         transform: scaleY(0);  
