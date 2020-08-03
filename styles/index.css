@@ -386,7 +386,6 @@ display: flex;
 
 .menu.open-image + .menu-item__img-box {
     transform: scale(1);
-    left: 10px;
     animation: fadeInLeft .6s linear ;
     -webkit-animation: fadeInLeft .6s linear ;
     -webkit-transform: scale(1);
