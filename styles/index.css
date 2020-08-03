@@ -384,7 +384,7 @@ left: -30px;
 display: flex;
 }
 
-.menu.open-image + .menu-item__img-box {
+.menu.open-image  .menu-item__img-box {
     transform: scale(1);
     animation: fadeInLeft .6s linear ;
     -webkit-animation: fadeInLeft .6s linear ;
@@ -392,13 +392,13 @@ display: flex;
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
+    background: rgba(0, 0, 0, .9);
 }
- .menu.open-image + .menu-item__img-box figure{
+ .menu.open-image .menu-item__img-box figure{
     display: flex;
     justify-content: center;
     width: 100vw;
     align-items: center;
-    background: rgba(0, 0, 0, .9);
     height: 100vh;
     position: relative;
     top:150px;
