@@ -333,13 +333,8 @@ height: 100%;
 
 /* close modal */
 #menu-card.close-modal{
-    transform: translateY(-10px) ;
     animation: collapseModal .7s cubic-bezier(0.64, 0.04, 0.35, 1) ;
     -webkit-animation: collapseModal .7s cubic-bezier(0.64, 0.04, 0.35, 1) ;
-    -webkit-transform: translateY(-10px) ;
-    -moz-transform: translateY(-10px) ;
-    -ms-transform: translateY(-10px) ;
-    -o-transform: translateY(-10px) ;
 }
 
 #menu-card.close-modal .menu{
@@ -865,6 +860,7 @@ display: flex;
          -o-transform: scale(0.75);
         }
 }
+
 @keyframes fadeOutLeft{
     0%,30%{
     position: absolute;
@@ -874,7 +870,7 @@ display: flex;
 }
     100%{
          justify-content: start;
-         opacity: 0.65;
+         opacity: 0.1;
          left: 125px;
          top: 150px;
          transform: scale(0.25);
