@@ -40,7 +40,7 @@ body{
 .header > .header__msg {
     font-size:17px;
     font-family: var(--header-text);
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .schedule__header ,.header{
   display: flex;
