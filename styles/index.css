@@ -340,14 +340,16 @@ height: 100%;
 #menu-card.close-modal .menu{
     height: 0;
     position: absolute;
-    transform:scaleY(0) ;
-    -webkit-transform:scaleY(0) ;
-    -moz-transform:scaleY(0) ;
+    transform:translateY(0px);
     transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     -webkit-transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     -moz-transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     -ms-transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
     -o-transition: all 1s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    -webkit-transform:translateY(0px);
+    -moz-transform:translateY(0px);
+    -ms-transform:translateY(0px);
+    -o-transform:translateY(0px);
 }
 
 #menu-card.close-modal .menu-item 
