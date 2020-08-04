@@ -332,8 +332,8 @@ padding:30px;
 
 /* close modal */
 #menu-card.close-modal {
-    animation: collapseModal 1s cubic-bezier(0.64, 0.04, 0.35, 1) ;
-    -webkit-animation: collapseModal 1s cubic-bezier(0.64, 0.04, 0.35, 1)   ;
+    animation: collapseModal 1s linear ;
+    -webkit-animation: collapseModal 1s linear   ;
 }
 #menu-card.close-modal .menu-item{
     transform: scaleY(0);
