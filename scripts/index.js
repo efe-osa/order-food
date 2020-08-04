@@ -12,7 +12,7 @@ function toggleFoodMenu() {
 
     document.querySelector('body > div:first-child').classList.toggle('darken-bg', !isOpen)
     
-    const viewMealImgButton = document.querySelector('.view-meal-img__btn')
+    const viewMealImgButton = document.querySelector('.menu-item__img-btn')
     viewMealImgButton.addEventListener('click', function (event) {
         return toggleMealImg(event)
     })
